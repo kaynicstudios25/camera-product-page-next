@@ -8,18 +8,19 @@ import ReviewSect from "@/app/components/sections/reviewSect";
 import ShippingSect from "@/app/components/sections/shippingSect";
 import Footer from "@/app/components/sections/Footer";
 
+
 const Page = () => {
     // Keep only the ID in state
-    const [activeSection, setActiveSection] = useState("ProductSect");
+    const [activeSection, setActiveSection] = useState<SectionId>('ProductSect');
     const [input, setInput] = useState("")
     const [hasError, setHasError] = useState(false);
 
 
-    // Mapping IDs to their respective components
-    const sectionComponents = {
+    type SectionId = 'ProductSect' | 'ReviewSect' | 'ShippingSect';
+    const sectionComponents: Record<SectionId, React.ReactNode> = {
         ProductSect: <ProductSect />,
         ReviewSect: <ReviewSect />,
-        ShippingSect: <ShippingSect />
+        ShippingSect: <ShippingSect />,
     };
 
     return (
@@ -35,11 +36,11 @@ const Page = () => {
 
                 <div className="border-2 border-white p-6  rounded-2xl flex-auto justify-center items-center bg-gray-50/10">
                     <div role="tablist" className="flex flex-col pb-4 md:flex-row justify-between text-white gap-2">
-                        {Object.keys(sectionComponents).map((id) => (
+                        {(Object.keys(sectionComponents) as SectionId[]).map((id) => (
                             <button
                                 key={id}
                                 role="tab"
-                                onClick={() => setActiveSection(id)} // Simple state update
+                                onClick={() => setActiveSection(id)} // Now TypeScript knows 'id' is a SectionId
                                 aria-selected={activeSection === id}
                                 className="border-1 rounded-xl p-2 w-full transition-colors aria-selected:bg-amber-700 aria-selected:border-gray-50 aria-selected:font-bold"
                             >
