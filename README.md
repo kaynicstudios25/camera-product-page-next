@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Helios Camera Product Page (Re-Developement)
+
+## Background
+The original [Camera Product Page](https://github.com/kaynicstudios25/Camera-Product-Page) uses html, css, and vanilla JS.
+I wanted to re-develop this site with Next.js because I felt the development experience would be better in the sense that I could create components for the sections that requires more attention/code.
+This is my first ever completed site with Next.js. I would say I like it so far, but I do got a lot more to learn.
+
+### Things I Learned:
+- `useState`- I want to do more practice with this, in terms of doing input states and more.
+- - It does remind me creating variables and functions in JavaScript, different but similar in its' own way.
+- `prev`- I still need to get myself familiar with it. I used it when creating the gallery component, and have a basic understanding in terms of how it is like `useState` in the fact that it updates values based on previous value.
+- `.map()`- I picked this up picked this up pretty quicky, that I found myself using it a lot throughout the project to keep the code as **DRY** as possible.
+- `aria-selected`- I was trying to search for a way to show a tab in the switchable tabs where the product description is and came across this. I dont think it's a lot of complexity to it.
 
 ## Getting Started
 
@@ -20,17 +32,8 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://github.com/user-attachments/assets/59b8bc74-4aef-4ccf-b276-e6bb9f1c83ff
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
