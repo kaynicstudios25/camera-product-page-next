@@ -29,7 +29,7 @@ export default function ReviewSection() {
     return (
         <section className="py-2 lg:flex justify-center">
             <div className="max-w-6xl px-4 flex-auto justify-center items-center">
-                <div className="flex justify-between items-center gap-16">
+                <div className="flex-auto justify-between items-center gap-16">
                     <div>
                       <h1 className="text-6xl text-gray-100 font-black">4.5</h1>  
                       <div className="flex gap-1">
@@ -70,9 +70,9 @@ export default function ReviewSection() {
                         ))}
                         </div>
 
-                    <div className="flex gap-2 p-4">
+                    <div className="flex-auto gap-2 p-4 justify-center items-center">
                         {average.map((i) => (
-                            <div className="flex flex-col justify-center items-center border-2 aspect-square border-gray-100 rounded-lg w-38 bg-gray-50/10">
+                            <div className="flex flex-col justify-center items-center border-2 aspect-square border-gray-100 rounded-lg max-w-38 bg-gray-50/10">
                                 <h1 className="text-6xl font-extrabold text-orange-600">{i.avg}</h1>
                                 <p className="text-2xl font-medium text-gray-100">{i.type}</p>
                             </div>
