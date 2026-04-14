@@ -103,18 +103,15 @@ export default function ReviewSection() {
             </div>
 
             {/* Rating Stars */}
-            <div className="flex mb-3">
-              {stars.map((_, i) => (
-                <span
-                  key={i}
-                  className={
-                    i < item.rating ? 'text-yellow-400' : 'text-gray-300'
-                  }
-                >
-                  ★
-                </span>
-              ))}
-            </div>
+            <div className="flex gap-1 my-2">
+            {stars.map((_, i) => (
+              <FaStar
+                key={i}
+                size={14}
+                color={item.rating > i ? color.yellow : color.gray}
+              />
+            ))}
+          </div>
 
             {/* Review Text */}
             <p className="text-gray-200 text-sm leading-relaxed grow">
