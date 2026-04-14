@@ -68,9 +68,9 @@ export default function ReviewSection() {
           {average.map((i, idx) => (
             <div
               key={idx}
-              className="flex flex-col justify-center items-center border border-gray-100/20 rounded-lg p-4 bg-gray-50/10 min-w-[100px]"
+              className="flex flex-col justify-center items-center border border-gray-100/20 rounded-lg p-4 bg-gray-50/10 min-w-25"
             >
-              <h1 className="text-2xl lg:text-3xl font-extrabold text-orange-600">
+              <h1 className="text-2xl lg:text-3xl font-extrabold text-gray-100">
                 {i.avg}
               </h1>
               <p className="text-xs lg:text-sm font-medium text-gray-100 uppercase tracking-wider">

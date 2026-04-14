@@ -32,7 +32,7 @@ const Footer = () => {
 
     return (
         <footer className="p-8">
-            <div className={"grid grid-cols-3 gap-8 justify-between items-center mx-auto"}>
+            <div className={"grid-1 text-center lg:grid grid-cols-3 gap-8 justify-between items-center mx-auto"}>
                 {footerEl.map((section) => (
                     <div key={section.id} className="flex flex-col gap-2">
                         <h5 className={"text-amber-600 font-semibold mb-2"}>
@@ -50,13 +50,12 @@ const Footer = () => {
                         ))}
                     </div>
                 ))}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col  gap-2">
                     <h5 className="text-amber-600 font-semibold mb-2">Contact Us</h5>
-                    <Image src={"/icon.png"} alt={"logo"} width={60} height={80} />
                     {/* Phone Link */}
                     <a
                         href="tel:+1234567890"
-                        className="flex items-center gap-2 text-sm text-white hover:text-amber-600 transition-colors"
+                        className="m-auto flex items-center gap-2 text-sm text-white hover:text-amber-600 transition-colors"
                     >
                         <Phone size={16} />
                         <span>+1 (234) 567-890</span>
@@ -65,12 +64,13 @@ const Footer = () => {
                     {/* Email Link */}
                     <a
                         href="mailto:hello@techking.com"
-                        className="flex items-center gap-2 text-sm text-white hover:text-amber-600 transition-colors"
+                        className="m-auto flex items-center gap-2 text-sm text-white hover:text-amber-600 transition-colors"
                     >
                         <Mail size={16} />
                         <span>hello@techking.com</span>
                     </a>
                 </div>
+                <Image src={"/icon.png"} alt={"logo"} width={60} height={80} />
             </div>
         </footer>
     )

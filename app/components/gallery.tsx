@@ -31,14 +31,14 @@ const Gallery = () => {
                 />
                 <button
                     onClick={prevSlide}
-                    className="hidden md:block md:absolute left-24 bottom-3/5 translate-y-1/2 bg-white/80 p-2 rounded-xl hover:bg-white"
+                    className="hidden md:block md:absolute w-10 text-center left-85 bottom-3/5 translate-y-32 bg-white/80 p-2 rounded-xl hover:bg-white"
                 >
                     ←
                 </button>
 
                 <button
                     onClick={nextSlide}
-                    className="hidden md:block md:absolute right-24 bottom-3/5 translate-y-1/2 bg-white/80 p-2 rounded-xl hover:bg-white"
+                    className="hidden md:block md:absolute w-10 right-85 bottom-3/5 translate-y-32 bg-white/80 p-2 rounded-xl hover:bg-white"
                 >
                     →
                 </button>
