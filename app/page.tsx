@@ -57,7 +57,7 @@ const Page = () => {
                 <div aria-label={"newsletter call-to-action"} className={"flex flex-col justify-center items-center m-10 "}>
                     <h1 className={"text-2xl lg:text-6xl text-center text-gray-50 font-bold mb-4"}>Don't Miss Any Updates</h1>
                     <p className={"text-md text-gray-200 text-center"}>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-                    <label className={"flex-wrap lg:flex-row justify-center items-center text-gray-200 gap-2  m-auto py-3"}>
+                    <label className={"flex-wrap lg:flex justify-center items-center text-gray-200 gap-2  m-auto py-3"}>
                         <input type={"email"} placeholder={"Email"} className={`border p-2 text-gray-700 rounded-lg bg-gray-50 min-w-70 max-w-100 m-auto ${hasError ? 'border-red-500 ring-red-100' : 'border-gray-300'}`} />
                         {hasError && <p className={"text-red-500 text-sm mt-1"}> This is a required field</p>}
                         <input type={"submit"} className={"bg-amber-700 m-auto px-6 py-2 rounded-lg flex flex-col justify-center gap-4 lg:flex-row"}/>

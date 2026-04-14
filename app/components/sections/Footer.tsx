@@ -32,7 +32,7 @@ const Footer = () => {
 
     return (
         <footer className="p-8">
-            <div className={"grid-1 text-center lg:grid grid-cols-3 gap-8 justify-between items-center mx-auto"}>
+            <div className={"grid-1 text-center lg:grid grid-cols-3 gap-8 justify-between items-start mx-auto"}>
                 {footerEl.map((section) => (
                     <div key={section.id} className="flex flex-col gap-2">
                         <h5 className={"text-amber-600 font-semibold mb-2"}>
@@ -69,8 +69,9 @@ const Footer = () => {
                         <Mail size={16} />
                         <span>hello@techking.com</span>
                     </a>
+                    <Image src={"/icon.png"} alt={"logo"} width={60} height={80} className='m-auto' />
+
                 </div>
-                <Image src={"/icon.png"} alt={"logo"} width={60} height={80} />
             </div>
         </footer>
     )

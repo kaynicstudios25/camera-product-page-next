@@ -25,9 +25,9 @@ export default function ReviewSection() {
   ];
 
   return (
-    <section className="py-2 lg:flex justify-center">
+    <section className="flex-flex-col md:flex-col md:w-[75%] m-auto">
       {/* Review Info Header */}
-      <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-16 mb-12">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 mb-12">
         {/* Left: Main Review AVG */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-auto">
           <h1 className="text-6xl text-gray-100 font-black">4.5</h1>
@@ -64,7 +64,7 @@ export default function ReviewSection() {
         </div>
 
         {/* Right: Rating Cards (Quality, Value, etc.) */}
-        <div className="grid grid-cols-3 lg:flex lg:flex-col gap-4 w-full lg:w-auto">
+        <div className="grid grid-cols-3 lg:flex lg:flex-row gap-4 w-full lg:w-auto">
           {average.map((i, idx) => (
             <div
               key={idx}
